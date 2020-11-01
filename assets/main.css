@@ -1,0 +1,74 @@
+body, h1, h4, p, ul, li, blockquote {
+	margin: 0;
+	padding: 0;
+	font: 16px/1.5em 'Roboto Slab', Serif;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #CC0001;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #939393;
+}
+
+body {
+	padding: 20px;
+	color: #1A1A1A;
+	background: #FFF;
+}
+header {
+	text-align: center;
+	padding: 60px 0;
+}
+h1 {
+	display: inline-block;
+	padding-left: 140px;
+	background: url('./logo-240.png') no-repeat 0 0;
+	background-size: 120px 111px;
+	height: 111px;
+	text-align: left;
+}
+h1 a {
+	text-decoration: none !important;
+}
+h1 a span {
+	font-size: 30px;
+	line-height: 1.2em;
+	font-weight: 600;
+	display: block;
+	text-transform: uppercase;
+	color: #CC0001;
+}
+h1 span.l {
+	color: #000;
+}
+
+main {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.manifest {
+	text-align: center;
+	padding: 30px 0;
+}
+
+article h4 {
+	padding: 20px 0;
+	font-weight: 600;
+}
+article ul li {
+	padding: 20px;
+}
+article ul li:nth-child(odd) {
+	background: #E0E0E0;
+}
+article ul li:nth-child(even) {
+	background: #EEEEEE;
+}
+
+

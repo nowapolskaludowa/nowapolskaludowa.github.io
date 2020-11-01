@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.ico?qwerty" />
+
+	{% seo %}
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;600&amp;display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="{{ "/assets/main.css" | prepend: site.baseurl }}" />
+	<meta property="og:image" content="{{ "/assets/og-image.png" | prepend: site.baseurl }}" />
+
+	{% feed_meta %}
+</head>
+<body>
+
+	<header>
+		<h1>
+			<a href="{{ site.baseurl }}/">
+				<span class="n">Nowa</span>
+				<span class="p">Polska</span>
+				<span class="l">Ludowa</span>
+			</a>
+		</h1>
+	</header>
+
+	<main>
+		{{ content }}
+	</main>
+
+</body>
+</html>

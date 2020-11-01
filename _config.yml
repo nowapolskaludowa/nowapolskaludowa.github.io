@@ -1,0 +1,29 @@
+# Site settings
+title: "Nowa Polska Ludowa"
+description: "Nowa Polska Ludowa"
+baseurl: ""
+url: "https://nowapolskaludowa.github.io"
+
+# Author
+author:
+  name: "Nowa Polska Ludowa"
+  url: "https://nowapolskaludowa.github.io"
+
+# Build settings
+markdown: kramdown
+include:
+  - _pages
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+# Permalinks
+permalink: /:year-:month-:day-:title
+paginate: 9999
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock ]

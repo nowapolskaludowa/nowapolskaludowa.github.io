@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<blockquote class="manifest">
+	Znajdujesz się na stronie agregującej bieżące historię z Polski, które <strong>budzą obawy o wolność</strong>.
+	W celu zachowania obiektywizmu, na tej stronie nie znajdziesz opinii autora, będą tutaj zamieszczane
+	tylko i wyłącznie cytaty oraz odnośniki do publikacji w sieci. Tak aby czytelnik mógł sam wypracować sobie własne zdanie.
+	Strona jest hostowana na <a href="https://github.com/nowapolskaludowa/nowapolskaludowa">GitHubie</a>, możesz w każdym momencie zrobić jej kopie zapasową. 
+	Aby zasugerować artykuł dodaj <a href="https://github.com/nowapolskaludowa/nowapolskaludowa/issues">issue</a> na GitHubie. Śledź tę stronę przez <a href="/feed.xml">RSS</a>.
+</blockquote>
+
+{% for post in paginator.posts %}
+	<article>
+		<h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+		<div class="content">
+			{{ post.content }}
+		</div>
+	</article>
+{% endfor %}
